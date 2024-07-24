@@ -366,7 +366,7 @@
         var tranvia = new L.GeoJSON(lineas, {
             filter: function (feature) { return ["Tranvía de Dos Hermanas", "Tranvía de Alcalá", "Tranvía del Aljarafe 1", "Tranvía del Aljarafe 2", "Tranvía del Norte"].includes(feature.properties.linea); },
             weight: 4,
-            color: "#A0522D",
+            color: "#FFA500",
             onEachFeature: function (feature, layer) {
                 layer.bindPopup("<div style='text-align: center'><h6>" + feature.properties.linea + "</h6></div>", {
                     minWidth: 150,
@@ -424,7 +424,7 @@
             div.innerHTML += '<i style="background: #FF0000"></i><span>Línea 3 Metro</span><br>';
             div.innerHTML += '<i style="background: #FFFF00"></i><span>Línea 4 Metro</span><br>';
             div.innerHTML += '<i style="background: #40E0D0"></i><span>Metrocentro</span><br>';
-            div.innerHTML += '<i style="background: #A0522D"></i><span>Línea Tranvía</span><br>';
+            div.innerHTML += '<i style="background: #FFA500"></i><span>Línea Tranvía</span><br>';
             div.innerHTML += '<i style="background: #8B008B"></i><span>Línea Cercanías</span><br>';
             return div;
         };
