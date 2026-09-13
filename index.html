@@ -364,7 +364,7 @@
         });
 
         var tranvia = new L.GeoJSON(lineas, {
-            filter: function (feature) { return ["Tranvía de Dos Hermanas", "Tranvía de Alcalá", "Tranvía del Aljarafe 1", "Tranvía del Aljarafe 2", "Tranvía del Norte"].includes(feature.properties.linea); },
+            filter: function (feature) { return ["Tranvía de Dos Hermanas", "Tranvía de Alcalá", "Tranvía del Aljarafe 1", "Tranvía del Aljarafe 2"].includes(feature.properties.linea); },
             weight: 4,
             color: "#FFA500",
             onEachFeature: function (feature, layer) {
@@ -376,7 +376,7 @@
         });
 
         var cercanias = new L.GeoJSON(lineas, {
-            filter: function (feature) { return ["Linea C1 Cercanías", "Linea C2 Cercanías", "Linea C3 Cercanías", "Linea C4 Cercanías", "Linea C5 Cercanías", "Linea C6 Cercanías", "Linea C7 Cercanías"].includes(feature.properties.linea); },
+            filter: function (feature) { return ["Linea C1 Cercanías", "Linea C2 Cercanías", "Linea C3 Cercanías", "Linea C4 Cercanías", "Linea C5 Cercanías", "Linea C6 Cercanías"].includes(feature.properties.linea); },
             weight: 4,
             color: "#8B008B",
             onEachFeature: function (feature, layer) {
