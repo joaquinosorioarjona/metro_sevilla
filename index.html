@@ -399,7 +399,7 @@
             }
         });
 
-        var metro = L.layerGroup([metro1, metro2, metro3, metro4]).addTo(map);
+        var metro = L.layerGroup([metro1, metro2, metro3, metro4, tunel]).addTo(map);
 
         var baseLayers = {
             "OpenStreetMap": L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -435,6 +435,7 @@
             div.innerHTML += '<i style="background: #0000FF"></i><span>Línea 2 Metro</span><br>';
             div.innerHTML += '<i style="background: #FF0000"></i><span>Línea 3 Metro</span><br>';
             div.innerHTML += '<i style="background: #FFFF00"></i><span>Línea 4 Metro</span><br>';
+			div.innerHTML += '<i style="background: #FFA500"></i><span>Túnel subterráneo peatonal</span><br>';
             div.innerHTML += '<i style="background: #40E0D0"></i><span>Metrocentro</span><br>';
             div.innerHTML += '<i style="background: #FFA500"></i><span>Línea Tranvía</span><br>';
             div.innerHTML += '<i style="background: #8B008B"></i><span>Línea Cercanías</span><br>';
